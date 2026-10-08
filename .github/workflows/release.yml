@@ -1,8 +1,7 @@
 name: Release script
 on:
-  push:
-    tags:
-      - 'v*'
+  workflow_dispatch:
+
 jobs:
   build_and_package:
     runs-on: ${{ matrix.os }}
